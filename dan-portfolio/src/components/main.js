@@ -16,6 +16,6 @@ const Main = () => (
         <Route path= "/Resume" component = {Resume} />
 
     </Switch>
-)
+);
 
 export default Main;
