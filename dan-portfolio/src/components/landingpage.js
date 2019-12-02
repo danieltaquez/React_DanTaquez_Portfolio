@@ -19,6 +19,31 @@ class Landing extends Component {
 
                             <p>HTML/CSS |Semantic UI | JavaScript | React | Node.js | Express | MongoDB </p>
 
+                            <div className="social-links">
+                            {/* LinkedIn */}
+                            <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"  >
+                                <i className="fa fa-linkedin-square" aria-hidden="true"/>
+                            </a>
+
+                            {/* GitHub */}
+                            <a href="https://github.com/" rel="noopener noreferrer" target="_blank"  >
+                                <i className="fa fa-github-square" aria-hidden="true"/>
+                            </a>
+
+                            {/* YouTube */}
+                            <a href="https://www.google.com/" rel="noopener noreferrer" target="_blank"  >
+                                <i className="fa fa-youtube-square" aria-hidden="true"/>
+                            </a>
+
+                            {/* Freecodecamp */}
+                            <a href="https://www.freecodecamp.org/" rel="noopener noreferrer" target="_blank"  >
+                                <i className="fa fa-free-code-camp" aria-hidden="true"/>
+                            </a>
+
+
+
+                            </div>
+
                         </div>
                     </Cell>
                 </Grid> 
