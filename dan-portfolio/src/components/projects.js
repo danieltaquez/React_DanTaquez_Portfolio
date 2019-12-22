@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Tabs,Tab} from 'react-mdl'
+import {Tabs,Tab, Grid, Cell, Card, CardText, CardTitle, CardMenu, CardActions, Button, IconButton} from 'react-mdl'
 
 class Projects extends Component {
     constructor(props) {
@@ -11,7 +11,18 @@ class Projects extends Component {
 
         if(this.state.activeTab === 0){
         return(
-            <div><h1>This is React</h1></div>
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>HTML/CSS Templates</CardTitle>
+                <CardText>Lorem ajdndjs n sjdfjsjsdjsdj j njjsnsdj3 newfubiuefawekjf b ehjkfbaekhjbsaekjfh ehjfbaefj</CardText>
+                <CardActions border>
+                    <Button colored>GitHub</Button>
+                    <Button colored>CodePen</Button>
+                    <Button colored>LiveDemo</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton share/>
+                </CardMenu>
+            </Card>
           )
       } else if(this.state.activeTab === 1){
         return (
@@ -41,7 +52,12 @@ class Projects extends Component {
                 </Tabs>
 
                 <section className="projects-grid">
-                    {this.toggleCategories()}
+                    <Grid  className= "projects-grid">
+                        <Cell col={12}>
+                            <div className="content">{this.toggleCategories()}</div>
+                        </Cell>
+                    </Grid>
+                    
                 </section>
             </div>
         )
