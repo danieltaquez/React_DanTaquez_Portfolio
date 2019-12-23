@@ -11,18 +11,47 @@ class Projects extends Component {
 
         if(this.state.activeTab === 0){
         return(
+            <div className="projects-grid">
+            {/*Project 1 */}
             <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>HTML/CSS Templates</CardTitle>
                 <CardText>Lorem ajdndjs n sjdfjsjsdjsdj j njjsnsdj3 newfubiuefawekjf b ehjkfbaekhjbsaekjfh ehjfbaefj</CardText>
                 <CardActions border>
                     <Button colored>GitHub</Button>
                     <Button colored>CodePen</Button>
-                    <Button colored>LiveDemo</Button>
+                    <Button colored>Live Demo</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                    <IconButton share/>
+                    <IconButton name="share"/>
                 </CardMenu>
             </Card>
+            {/*Project 2 */}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>HTML/CSS Templates</CardTitle>
+                <CardText>Lorem ajdndjs n sjdfjsjsdjsdj j njjsnsdj3 newfubiuefawekjf b ehjkfbaekhjbsaekjfh ehjfbaefj</CardText>
+                <CardActions border>
+                    <Button colored>GitHub</Button>
+                    <Button colored>CodePen</Button>
+                    <Button colored>Live Demo</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+            {/*Project 3 */}
+            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>HTML/CSS Templates</CardTitle>
+                <CardText>Lorem ajdndjs n sjdfjsjsdjsdj j njjsnsdj3 newfubiuefawekjf b ehjkfbaekhjbsaekjfh ehjfbaefj</CardText>
+                <CardActions border>
+                    <Button colored>GitHub</Button>
+                    <Button colored>CodePen</Button>
+                    <Button colored>Live Demo</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+            </div>
           )
       } else if(this.state.activeTab === 1){
         return (
@@ -51,14 +80,11 @@ class Projects extends Component {
                     <Tab>Node.js</Tab>
                 </Tabs>
 
-                <section className="projects-grid">
-                    <Grid  className= "projects-grid">
+                    <Grid>
                         <Cell col={12}>
                             <div className="content">{this.toggleCategories()}</div>
                         </Cell>
                     </Grid>
-                    
-                </section>
             </div>
         )
     }
